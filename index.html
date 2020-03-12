@@ -15,6 +15,16 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <style>
+      .row div {
+        padding: 20px 10px;
+        border: solid 1px;
+      }
+
+      .col-sm-6 {
+        background: lightblue;
+      }
+    </style>
 
     <title>Hello, world!</title>
   </head>
@@ -40,8 +50,19 @@
       <button type="submit">Find car</button>
     </form>
 
-    <div class="container" style="background: skyblue">Fixed container</div>
-    <div class="container-fluid" style="background: red">Fluid container</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">First</div>
+        <div class="col-sm-6">Second</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+        <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+        <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+        <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
