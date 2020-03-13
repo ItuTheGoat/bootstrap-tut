@@ -144,7 +144,7 @@
         <div class="tab-content py-5 ">
           <div class="tab-pane active" id='king'>
             <h3>King</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis King ipsa corrupti, quia aliquid ea repudiandae eius impedit nemo fugit culpa, eum vitae eaque esse eos nam illum libero voluptatem est.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis <span class="text-info" data-toggle="tooltip" title='Me'>King ipsa corrupti</span>, quia aliquid ea repudiandae eius impedit nemo fugit culpa, eum vitae eaque esse eos nam illum libero voluptatem est.</p>
           </div>
           <div class="tab-pane" id='kaiser'>
             <h3>Kaiser</h3>
@@ -178,5 +178,12 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Tooltips -->
+    <!-- First, we need to enable them -->
+    <script>
+      $(function () {
+      $('[data-toggle="tooltip"]').tooltip()})
+    </script>
   </body>
 </html>
