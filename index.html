@@ -19,7 +19,28 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="jumbotron">
+    <!-- main navbar  -->
+    <!-- toggleable-sm makes it so that when we use a small screen, the navbar becomes toggleable -->
+    <nav class="navbar navbar-toggleable-sm bg-info navbar-dark navbar-expand-md">
+      <div class="container">
+        <!-- This is for small screens, the navbar collapses and this button shows it -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target='#mainNav'>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id='mainNav'>
+          <!-- nav within the navbar -->
+          <div class="navbar-nav">
+            <a href="#" class=" nav-item nav-link active">Home</a>
+            <a href="#" class=" nav-item nav-link ">About</a>
+            <a href="#" class=" nav-item nav-link ">Training</a>
+            <a href="#" class=" nav-item nav-link ">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="jumbotron bg-info text-white text-center" >
       <div class="container">
         <h2>Welcome to the Party</h2>
         <p>Huh?</p>
